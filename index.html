@@ -8,10 +8,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <!-- Bootstrap CSS -->
+  <!-- build:css css/main.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
   <link rel="stylesheet" href="css/styles.CSS">
+  <!-- endbuild -->
+
   <title>Ristorante Con Fusion</title>
 </head>
 
@@ -131,8 +134,8 @@
           </div>
           <ol class="carousel-indicators">
             <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#mycarousel" data-slide-to="1"</li>
-            <li data-target="#mycarousel" data-slide-to="2"</li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
           </ol>
           <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -203,32 +206,32 @@
               <div class="form-group row">
                 <label for="numberofguests" class="col-md-2 col-form-label">Number of Guests</label>
                 <div class="form-check col-md-1">
-                  <input class"form-check-input" type="radio" name="1guest"
-                  id="1guest" value="1guest">
+                  <input class="form-check-input" type="radio" name="1guest"
+                    id="1guest" value="1guest">
                   <label class="form-check-label" for="1guest">1</label>
                 </div>
                 <div class="form-check col-md-1">
-                  <input class"form-check-input" type="radio" name="2guests"
+                  <input class="form-check-input" type="radio" name="2guests"
                   id="2guests" value="test1">
                   <label class="form-check-label" for="2guests">2</label>
                 </div>
                 <div class="form-check col-md-1">
-                  <input class"form-check-input" type="radio" name="3guests"
+                  <input class="form-check-input" type="radio" name="3guests"
                   id="3guests" value="3guests">
                   <label class="form-check-label" for="3guests">3</label>
                 </div>
                 <div class="form-check col-md-1">
-                  <input class"form-check-input" type="radio" name="4guests"
+                  <input class="form-check-input" type="radio" name="4guests"
                   id="4guests" value="4guests">
                   <label class="form-check-label" for="4guests">4</label>
                 </div>
                 <div class="form-check col-md-1">
-                  <input class"form-check-input" type="radio" name="5guests"
+                  <input class="form-check-input" type="radio" name="5guests"
                   id="5guests" value="5guests">
                   <label class="form-check-label" for="5guests">5</label>
                 </div>
                 <div class="form-check col-md-1">
-                  <input class"form-check-input" type="radio" name="6guests"
+                  <input class="form-check-input" type="radio" name="6guests"
                   id="6guests" value="6guests">
                   <label class="form-check-label" for="6guests">6</label>
                 </div>
@@ -251,7 +254,6 @@
         </div>
       </div>
     </div>
-  </div>
 
   <footer class="footer">
     <div class="container">
@@ -295,26 +297,12 @@
     </div>
   </footer>
   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  <!-- build:js js/main.js -->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <script>
-    $(document).ready(function() {
-      $("#carouselButton").click(function(){
-          if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-              $("#mycarousel").carousel('pause');
-              $("#carouselButton").children("span").removeClass('fa-pause');
-              $("#carouselButton").children("span").addClass('fa-play');
-          }
-          else if ($("#carouselButton").children("span").hasClass('fa-play')){
-              $("#mycarousel").carousel('cycle');
-              $("#carouselButton").children("span").removeClass('fa-play');
-              $("#carouselButton").children("span").addClass('fa-pause');
-          }
-      });
-    });
-  </script>
+  <script src="js/scripts.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>
